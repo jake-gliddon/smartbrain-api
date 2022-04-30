@@ -4,19 +4,19 @@ const bcrypt = require('bcrypt-nodejs');
 const cors = require('cors');
 const knex = require('knex');
 
-const register = require('./smart-brain-api/controllers/register');
-const signin = require('./smart-brain-api/controllers/signin');
-const profile = require('./smart-brain-api/controllers/profile');
-const image = require('./smart-brain-api/controllers/image');
+const register = require('./controllers/register');
+const signin = require('./controllers/signin');
+const profile = require('./controllers/profile');
+const image = require('./controllers/image');
 
 const db = knex({
   // connect to your own database here:
   client: 'pg',
   connection: {
     host : '127.0.0.1',
-    user : 'jakeg',
+    user : 'jakegliddon',
     password : '',
-    database : 'smart-brain'
+    database : 'smartbrain'
   }
 });
 
