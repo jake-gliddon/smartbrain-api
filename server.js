@@ -4,10 +4,10 @@ const bcrypt = require('bcrypt-nodejs');
 const cors = require('cors');
 const knex = require('knex');
 
-const register = require('./controllers/register');
-const signin = require('./controllers/signin');
-const profile = require('./controllers/profile');
-const image = require('./controllers/image');
+const register = require('./smartbrain-api/controllers/register');
+const signin = require('./smartbrain-api/controllers/signin');
+const profile = require('./smartbrain-api/controllers/profile');
+const image = require('./smartbrain-api/controllers/image');
 
 const db = knex({
   // connect to your own database here:
